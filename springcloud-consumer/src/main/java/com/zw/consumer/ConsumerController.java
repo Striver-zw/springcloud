@@ -12,10 +12,14 @@ public class ConsumerController {
 	@Autowired
 	RestTemplate restTemplate;
 
+	/**
+	 * 调用服务
+	 * @return
+	 */
 	@RequestMapping(value = "/ribbon-consumer", method = RequestMethod.GET)
 	public String helloConsumer() {
 //		String body = restTemplate.getForEntity("http://demo-register/hello", String.class).getBody();
 //		System.out.println(body);
-		return restTemplate.getForEntity("http://demo-register/hello", String.class).getBody();
+		return restTemplate.getForEntity("http://springcloud-register/hello", String.class).getBody();
 	}
 }

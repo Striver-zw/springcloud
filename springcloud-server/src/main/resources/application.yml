@@ -7,11 +7,18 @@ server:
 spring:
     application:
         name: eureka-server
-
+        
+management:
+    contextPath: /hello
+endpoints:
+    info:
+        path: /appinfo
+    health:
+        path: /checkHealth
 eureka:
-    #instance:
-        #statusPageUrlPath: /info
-        #healthCheckUrlPath: /health
+    instance:
+        statusPageUrlPath: ${management.contextPath}/${endpoints.info.path}
+        healthCheckUrlPath: ${management.contextPath}/${endpoints.health.path}
     client:
         #不向注册中心注册自己
         registerWithEureka: false
