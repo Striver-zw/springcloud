@@ -17,6 +17,7 @@
   	<module>springcloud-feign-consumer</module>
   	<module>springcloud-turbine</module>
   	<module>springcloud-service-api</module>
+  	<module>springcloud-api-gateway</module>
   </modules>
   
   <parent>
