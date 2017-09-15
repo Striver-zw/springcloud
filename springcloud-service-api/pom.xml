@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.zw.feign.consumer</groupId>
-	<artifactId>springcloud-feign-consumer</artifactId>
+	<groupId>com.zw.service.api</groupId>
+	<artifactId>springcloud-service-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>springcloud-feign-consumer</name>
+	<name>springcloud-service-api</name>
 	<description>Demo project for Spring Boot register</description>
 
 	<parent>
@@ -24,22 +24,18 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.zw.service.api</groupId>
-			<artifactId>springcloud-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+	<dependency>
+			 <groupId>com.zw.springcloud</groupId>
+		    <artifactId>springcloud-common</artifactId>
+		    <version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feign</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
 

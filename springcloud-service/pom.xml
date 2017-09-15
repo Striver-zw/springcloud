@@ -22,10 +22,10 @@
 	</properties>
 
 	<dependencies>
-	<dependency>
-			 <groupId>com.zw.springcloud</groupId>
-		    <artifactId>springcloud-common</artifactId>
-		    <version>1.0.0</version>
+		<dependency>
+			<groupId>com.zw.service.api</groupId>
+			<artifactId>springcloud-service-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
