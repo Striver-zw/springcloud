@@ -3,7 +3,7 @@ server:
      #   uri-encoding: UTF-8
       #  max-threads: 1000
        # min-spare-threads: 30
-    port: 8888
+    port: 1111
 spring:
     application:
         name: eureka-server
@@ -25,4 +25,4 @@ eureka:
         #检索服务 这里是注册中心
         fetchRegistry: false
         serviceUrl:
-            defaultZone: http://localhost:8888/eureka/
+            defaultZone: http://localhost:1111/eureka/

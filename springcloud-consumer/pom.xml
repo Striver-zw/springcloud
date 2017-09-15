@@ -4,17 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.zw.consumer</groupId>
-	<artifactId>demo-consumer</artifactId>
+	<artifactId>springcloud-consumer</artifactId>
 	<packaging>jar</packaging>
 
-	<name>demo-consumer</name>
+	<name>springcloud-consumer</name>
 	<description>Demo project for Spring Boot register</description>
 
 	<parent>
 		<groupId>com.zw.springcloud</groupId>
 		<artifactId>springcloud</artifactId>
 		<version>1.0.0</version>
-		<relativePath>springcloud</relativePath>
 	</parent>
 
 	<properties>
@@ -40,6 +39,19 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-ribbon</artifactId>
+		</dependency>
+		<!-- 容错机制  -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+		<!-- <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
