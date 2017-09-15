@@ -2,7 +2,7 @@
 :begin
 echo springcloud-ribbon
 cd G:\spring\project\springcloud\springcloud-register\target
-java -jar springcloud-register.jar --server.port=8082
+java -jar springcloud-register-1.0.0.jar
 pause
 exit;
 goto begin
