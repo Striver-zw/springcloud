@@ -1,4 +1,4 @@
-package com.zw.server;
+package org.springcloud.common;
 
 
 import java.util.HashMap;

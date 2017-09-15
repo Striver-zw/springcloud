@@ -7,10 +7,15 @@
   
   <modules>
   	<module>springcloud-consumer</module>
-  	<module>springcloud-register</module>
+  	<module>springcloud-service</module>
   	<module>springcloud-server</module>
   	<module>springcloud-ribbon</module>
   	<module>springcloud-hystrix</module>
+  	<module>springcloud-common</module>
+  	<module>springcloud-amqp</module>
+  	<module>springcloud-consul</module>
+  	<module>springcloud-feign-consumer</module>
+  	<module>springcloud-turbine</module>
   </modules>
   
   <parent>
@@ -19,7 +24,10 @@
 		<version>1.5.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+  <dependencies>
+  	
   
+  </dependencies>
   
 	<repositories>
 		<repository>

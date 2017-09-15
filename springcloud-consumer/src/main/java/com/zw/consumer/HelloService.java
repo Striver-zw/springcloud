@@ -1,6 +1,6 @@
 package com.zw.consumer;
 
-import org.jboss.logging.Logger;
+import org.springcloud.common.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -14,7 +14,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
  */
 @Service
 public class HelloService {
-	private final Logger logger = Logger.getLogger(getClass());
+//	private final Logger logger = Logger.getLogger(getClass());
 	@Autowired
 	RestTemplate restTemplate;
 

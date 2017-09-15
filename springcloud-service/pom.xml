@@ -3,19 +3,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.zw.consumer</groupId>
-	<artifactId>springcloud-consumer</artifactId>
+	<groupId>com.zw.service</groupId>
+	<artifactId>springcloud-service</artifactId>
 	<packaging>jar</packaging>
 
-	<name>springcloud-consumer</name>
+	<name>springcloud-service</name>
 	<description>Demo project for Spring Boot register</description>
-
+	
 	<parent>
 		<groupId>com.zw.springcloud</groupId>
 		<artifactId>springcloud</artifactId>
 		<version>1.0.0</version>
 	</parent>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -23,10 +22,14 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
+	<dependency>
 			 <groupId>com.zw.springcloud</groupId>
 		    <artifactId>springcloud-common</artifactId>
 		    <version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -36,28 +39,9 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
-		</dependency>
-		<!-- 容错机制  -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-hystrix-amqp</artifactId>
-		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-		</dependency> -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 	</dependencies>
-
+	<build>
+	<!--  <finalName>springcloud-register</finalName> -->
+	</build>
 
 </project>

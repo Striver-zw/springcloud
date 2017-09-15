@@ -1,4 +1,4 @@
-package com.zw.register;
+package com.zw.service;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
