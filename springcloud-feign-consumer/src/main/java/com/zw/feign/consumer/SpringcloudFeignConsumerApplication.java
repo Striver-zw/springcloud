@@ -15,10 +15,10 @@ import feign.Logger;
 public class SpringcloudFeignConsumerApplication {
 
 	
-	@Bean
-	Logger.Level feignLoggerLevel() {
-		return Logger.Level.FULL;
-	}
+//	@Bean
+//	Logger.Level feignLoggerLevel() {
+//		return Logger.Level.FULL;
+//	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringcloudFeignConsumerApplication.class, args);
