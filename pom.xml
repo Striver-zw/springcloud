@@ -8,7 +8,7 @@
   <modules>
   	<module>springcloud-consumer</module>
   	<module>springcloud-service</module>
-  	<module>springcloud-server</module>
+  	
   	<module>springcloud-ribbon</module>
   	<module>springcloud-hystrix</module>
   	<module>springcloud-common</module>
@@ -18,6 +18,8 @@
   	<module>springcloud-turbine</module>
   	<module>springcloud-service-api</module>
   	<module>springcloud-api-gateway</module>
+  	<module>springcloud-okhttp</module>
+  	<module>springcloud-eureka-server</module>
   </modules>
   
   <parent>
