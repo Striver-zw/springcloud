@@ -1,0 +1,75 @@
+##高可用注册中心组
+#server: 
+#    port: 6868
+#spring:
+#    application:
+#        name: eureka-micro-server
+#eureka: 
+#    client:
+#        #向注册中心注册自己
+#        registerWithEureka: true
+#        #检索服务 这里是注册中心
+#        fetchRegistry: true
+#        #客户端与服务端地址
+#        serviceUrl:
+#            defaultZone: http://singleton:singleton@localhost:6869/eureka/
+##用户认证
+#security:
+#  basic:
+#    enabled: true #开启基于http basic 的认证
+#  user:
+#    name: singleton
+#    password: singleton
+#    
+#    
+    
+    
+    
+    
+#高可用注册中心组
+#server: 
+#    port: 6869
+#spring:
+#    application:
+#        name: eureka-micro-server
+#eureka: 
+#    client:
+#        #向注册中心注册自己
+#        registerWithEureka: true
+#        #检索服务 这里是注册中心
+#        fetchRegistry: true
+#        #客户端与服务端地址
+#        serviceUrl:
+#            defaultZone: http://singleton:singleton@localhost:6868/eureka/
+##用户认证
+#security:
+#  basic:
+#    enabled: true #开启基于http basic 的认证
+#  user:
+#    name: singleton
+#    password: singleton    
+    
+    
+    
+#单机注册中心    
+server: 
+    port: 6868
+spring:
+    application:
+        name: eureka-micro-server
+eureka: 
+    client:
+        #不向注册中心注册自己
+        registerWithEureka: false
+        #检索服务 这里是注册中心
+        fetchRegistry: false
+        #客户端与服务端地址
+#        serviceUrl:
+#            defaultZone: http://localhost:${server.port}/eureka/
+#用户认证
+security:
+  basic:
+    enabled: true #开启基于http basic 的认证
+  user:
+    name: singleton
+    password: singleton

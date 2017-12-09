@@ -18,8 +18,17 @@
   	<module>springcloud-turbine</module>
   	<module>springcloud-service-api</module>
   	<module>springcloud-api-gateway</module>
-  	<module>springcloud-okhttp</module>
+  	
   	<module>springcloud-eureka-server</module>
+  	
+  	<module>springcloud-api-gateway-dynamic-route</module>
+  	
+  	<module>springcloud-okhttp-micro</module>
+  	<module>springcloud-eureka-server-micro</module>
+  	<module>springcloud-eureka-order-micro</module>
+  	<module>springcloud-eureka-goods-micro</module>
+  	<module>springcloud-gateway-micro</module>
+  	<module>springcloud-config-micro</module>
   </modules>
   
   <parent>

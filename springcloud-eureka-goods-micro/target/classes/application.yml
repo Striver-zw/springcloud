@@ -1,0 +1,21 @@
+server: 
+    port: 9091
+spring:
+    application:
+        name: eureka-micro-goods
+eureka: 
+    client:
+        #向注册中心注册自己
+        registerWithEureka: true
+        #检索服务 获取注册信息
+        fetchRegistry: true
+        #客户端与服务端地址
+        serviceUrl:
+            defaultZone: http://singleton:singleton@localhost:6868/eureka/
+    instance: 
+       prefer-ip-address: true #将自己的IP注册到服务中心去
+       ip-address: localhost #指定ip地址
+
+management:
+  security:
+    enabled: false #是否开启actuator安全认证
